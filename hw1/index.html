@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张三 - 个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部个人信息 -->
+        <header class="header">
+            <h1 class="name">张三</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>墨尔本</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <span>13800138000（不常用）</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📧</span>
+                    <a href="mailto:zhangsan@example.com">zhangsan@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">🌐</span>
+                    <a href="https://www.zhangsan.dev/" target="_blank">zhangsan.dev</a>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💬</span>
+                    <span>微信: zhangsan_wx</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💻</span>
+                    <a href="https://github.com/zhangsan-dev" target="_blank">github.com/zhangsan-dev</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- 教育背景 -->
+            <section class="section education">
+                <h2 class="section-title">教育背景</h2>
+                <article class="education-item">
+                    <div class="education-header">
+                        <div class="education-left">
+                            <h3>墨尔本大学 <span class="tag">QS前20</span></h3>
+                            <p class="major">计算与软件工程</p>
+                        </div>
+                        <div class="education-right">
+                            <span class="date">2月 2024 - 2月 2027</span>
+                            <span class="degree">本科</span>
+                        </div>
+                    </div>
+                    <p class="courses">
+                        <strong>相关课程：</strong>Python，C，JAVA，数据算法与结构，面向对象编程，数据库，SQL
+                    </p>
+                </article>
+            </section>
+
+            <!-- 工作经验 -->
+            <section class="section experience">
+                <h2 class="section-title">工作经验</h2>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <h3>特赞 Tezign</h3>
+                            <p class="position">AIGC 研发实习生（AI Agent & 全栈方向）</p>
+                            <a href="https://m.tezign.com/home" target="_blank" class="company-link">https://m.tezign.com/home</a>
+                        </div>
+                        <div class="experience-right">
+                            <span class="date">10月 2025 - 至今</span>
+                            <span class="location">上海</span>
+                        </div>
+                    </div>
+
+                    <div class="project-highlight">
+                        <h4>Atypica - 商业研究多智能体</h4>
+                        <a href="https://atypica.ai" target="_blank">https://atypica.ai</a>
+                    </div>
+
+                    <ul class="achievement-list">
+                        <li>负责公司核心访谈 Agent 系统「Atypica」的功能开发，包括评分题型、选择题验证规则（min/max 选择数量）、"其他"选项输入框、图片附件等能力，提升问卷系统的灵活性与扩展性。</li>
+                        <li>持续迭代 Prompt 模板，测试多种大模型，优化输出稳定性、格式一致性与访谈流程匹配度，减少模型响应不可控导致的渲染与业务中断问题。</li>
+                        <li>设计与实现多个 Agent 工具（tools），包括 <code>selectQuestion</code> 工具与问题快照（snapshot）架构，使工具调用具备可预测输入/输出、类型安全与问题去重能力，增强整体推理流程的可靠性。</li>
+                        <li>使用 Zod 重构问题验证体系，对开放题、单选、多选、评分题进行严格的类型检查与业务规则校验，确保复杂访谈流程的数据完整性与逻辑稳定性。</li>
+                        <li>完成多项 UI/UX 细节优化，包括选项数量扩展、"其他"选项的状态管理、图片 CDN 代理修复、调试日志体系等，提升系统稳定性与开发可维护性。</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- 项目经历 -->
+            <section class="section projects">
+                <h2 class="section-title">项目经历</h2>
+                <article class="project-item">
+                    <div class="project-header">
+                        <div class="project-left">
+                            <h3>AI语音模拟面试平台 - PrepWise</h3>
+                            <a href="https://github.com/zhangsan-dev/interview-prep" target="_blank" class="project-link">github.com/zhangsan-dev/interview-prep</a>
+                        </div>
+                        <div class="project-right">
+                            <span class="date">4月 2025 - 6月 2025</span>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="tech-stack">
+                            <strong>独立开发者</strong> | 技术栈：Next.js · React · Firebase · Gemini AI · Vapi Voice SDK
+                        </p>
+                        <ul class="achievement-list">
+                            <li>构建全栈 Web 应用，支持<strong>语音驱动的面试模拟</strong>与 <strong>AI 实时反馈</strong>，提升用户交互沉浸感</li>
+                            <li>使用 Next.js（App Router + SSR）与 React Hooks 设计前端逻辑，优化渲染与状态管理性能</li>
+                            <li>集成 Google Gemini API，实现动态问题生成与语义反馈，设计可扩展的 AI 接口调用层</li>
+                            <li>通过 Vapi Voice SDK 实现实时语音识别与合成，保证前端与后端语音流畅交互</li>
+                            <li>设计<strong>模块化架构</strong>（客户端 / 集成层 / 后端服务），提升代码可维护性与扩展性</li>
+                            <li>使用 Firebase Authentication & Firestore 管理用户会话与反馈存储，支持多用户个性化回顾</li>
+                            <li>在开发流程中引入 ESLint/Prettier 保证代码规范，并通过迭代优化持续提升代码质量</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 技能 -->
+            <section class="section skills">
+                <h2 class="section-title">技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>前端开发</h4>
+                        <p>精通 HTML、CSS、JavaScript/TypeScript，熟悉 ES6+、闭包、异步编程与现代浏览器 API。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>框架与生态</h4>
+                        <p>熟练使用 React、Next.js，掌握组件化设计、SSR、同构应用与性能优化。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>工程化</h4>
+                        <p>熟悉 Vite/Webpack、ESLint/Prettier、Jest/Vitest，具备标准 Git/GitHub 协作经验。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>计算机基础</h4>
+                        <p>扎实的数据结构与算法功底，具备复杂逻辑分析与优化能力。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>AI 工程</h4>
+                        <p>掌握 Prompt 迭代、模型对比测试、Agent 工具设计与输出稳定性优化，有实际产品落地经验。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>学习能力与技术输出</h4>
+                        <p>保持强学习动力，积极探索前端工程化、LLM 应用、Agent 体系等方向；长期维护个人技术博客 <a href="https://zhangsan.dev" target="_blank">zhangsan.dev</a>，总结工程经验与项目实践；持续参与开源项目并撰写技术文档。</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>语言能力</h4>
+                        <p>雅思 7.0，英文技术文档理解与沟通能力强。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2025 张三 - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
