@@ -1,0 +1,32 @@
+.message-input-container {
+  border-top: 1px solid #f0f0f0;
+  padding: 16px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upload-progress {
+  padding: 0 16px;
+}
+
+.message-input-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.message-input-text {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.message-input-text textarea {
+  flex: 1;
+}
+
+.message-input-text button {
+  flex-shrink: 0;
+}
